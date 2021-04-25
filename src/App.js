@@ -15,8 +15,6 @@ import React, { Component } from 'react';
 const cardData = [
   { title: 'card 1', image: cause1 },
   { title: 'card 2', image: cause2 },
-  { title: 'card 3', image: cause3 },
-  { title: 'card 4', image: cause4 },
 ];
 export default class App extends Component {
   state = { overlay: false, index: 0 };
@@ -64,11 +62,31 @@ export default class App extends Component {
           </Carousel.Item>
         </Carousel>
         <div className={styles.section}>
-          <div className={styles.sectionHeader}>Our Causes</div>
+          <div className={styles.sectionHeader}>Our Vision and Mission</div>
+          <div className={styles.visionHolder}>
+            <div className={styles.container}>
+              <img src={cause3} alt="Avatar" className={styles.image} />
+              <div className={styles.overlay}>
+                <div className={styles.text}>Hello World</div>
+              </div>
+              <div className={styles.caption}>Caption</div>
+            </div>
+
+            <div className={styles.container}>
+              <img src={cause3} alt="Avatar" className={styles.image} />
+              <div className={styles.overlay}>
+                <div className={styles.text}>Hello World</div>
+              </div>
+              <div className={styles.caption}>Caption</div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.section}>
+          <div className={styles.sectionHeader}>Blog</div>
           <div className={styles.cardContainer}>
             {cardData.map((val, i) => {
               return (
-                <div className="card">
+                <div className="card" style={{ width: '20em' }}>
                   <img
                     className="card-img-top image"
                     src={val.image}
