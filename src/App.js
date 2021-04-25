@@ -68,7 +68,7 @@ export default class App extends Component {
           <div className={styles.cardContainer}>
             {cardData.map((val, i) => {
               return (
-                <div className="card" style={{ width: '18rem' }}>
+                <div className="card">
                   <img
                     className="card-img-top image"
                     src={val.image}
