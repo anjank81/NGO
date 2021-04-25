@@ -39,12 +39,7 @@ export default class App extends Component {
         </div> */}
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src={image1}
-              alt="First slide"
-              style={{ height: '250px' }}
-            />
+            <img className="d-block w-100" src={image1} alt="First slide" />
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -79,7 +74,6 @@ export default class App extends Component {
                     src={val.image}
                     alt="Card cap"
                   />
-
                   <div className="card-body">
                     <h5 className="card-title">Card title</h5>
                     <p className="card-text">
