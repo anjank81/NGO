@@ -24,7 +24,7 @@ export default class App extends Component {
     return (
       <div className={styles.base}>
         <Navbar bg="primary" variant="dark">
-          <Navbar.Brand href="#home">Logo Here</Navbar.Brand>
+          <Navbar.Brand href="#home">Talkitout</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">About Us</Nav.Link>
@@ -39,7 +39,12 @@ export default class App extends Component {
         </div> */}
         <Carousel>
           <Carousel.Item>
-            <img className="d-block w-100" src={image1} alt="First slide" />
+            <img
+              className="d-block w-100"
+              src={image1}
+              alt="First slide"
+              style={{ height: '250px' }}
+            />
             <Carousel.Caption>
               <h3>First slide label</h3>
               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
